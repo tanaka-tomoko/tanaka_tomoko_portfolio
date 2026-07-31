@@ -1,1 +1,228 @@
 @charset "utf-8";
+
+/* フォント */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  color: #0D1317;
+  font-size: 20px;
+}
+
+/* ローディング画面
+.loading {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loadingFadeOut 1s ease 3.6s forwards;
+}
+
+.loading-text {
+  position: relative;
+  width: 150px;
+  height: 180px;
+  font-size: 36px;
+  line-height: 40px;
+  writing-mode: vertical-rl;
+}
+
+.char,
+.line {
+  opacity: 0;
+  animation: charFadeIn 0.45s ease forwards;
+}
+
+.c1 { animation-delay: 0.6s; }
+.c2 { animation-delay: 0.8s; }
+.c3 { animation-delay: 1.0s; }
+
+.c4 { animation-delay: 1.2s; }
+.c5 { animation-delay: 1.4s; }
+.c6 { animation-delay: 1.6s; }
+.c7 { animation-delay: 1.8s; }
+
+.c8 { animation-delay: 2.0s; }
+.c9 { animation-delay: 2.2s; }
+
+.line {
+  display: inline-block;
+  width: 1px;
+  height: 48px;
+  background: #111;
+  margin-top: 8px;
+  animation-delay: 2.4s;
+}
+
+@keyframes charFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(10px, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes loadingFadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+*/
+
+
+/* グラデーション背景 */
+body {
+  margin: 0;
+  position: relative;
+}
+
+.gradation {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(270deg, #FFFFFF, #87BFEA);
+  background-size: 200% 200%;
+  animation: Grad 5s ease infinite;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes Grad {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+/* トップページ メインビジュアル */
+.main-visual {
+  position: relative;
+}
+
+.main-visual img {
+  display: block;
+  width: 900px;
+}
+
+.main-copy {
+    position: absolute;
+    right: 36px;
+    bottom: 36px;
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.main-copy p {
+    writing-mode: vertical-rl;
+    font-family: hiragino-mincho-pron, sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #f5f5f5;
+}
+
+.main-copy span {
+    display: block;
+    width: 1px;
+    height: 48px;
+    background-color: #f5f5f5;
+}
+
+/* トップページ コンセプト */
+.concept {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 900px;
+    margin: 300px auto;
+
+    padding: 0 40px;
+}
+
+.concept-text {
+    width: 411px;
+}
+
+.concept-text p {
+    font-size: 14px;
+    line-height: 3.0;
+}
+
+.concept-image {
+    width: 300px;
+}
+
+.concept-image img {
+    display: block;
+    width: 300px;
+}
+
+/* トップページ About me */
+.top-about-me {
+  max-width: 900px;
+  height: 624px;
+  margin: 300px auto;
+}
+
+h2 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.about-inner {
+  max-width: 900px;
+  height: 508px;
+  margin: 88px auto;
+}
+
+.about-inner img {
+  width: 300px;
+  height: 225px;
+}
+
+.about-text {
+  width: 139px;
+  height: 77px;
+}
+
+.name {
+  font-size: 32px;  
+}
+
+.name-en {
+  font-size: 14px;
+}
+
+.name-text {
+  width: 478px;
+  font-size: 14px;
+  line-height: 3.0;
+}
+
+.name-text a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+.about-me-line {
+  width: 100px;
+}
+
+.copy-right {
+  padding: 32px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}

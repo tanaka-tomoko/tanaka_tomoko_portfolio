@@ -6,55 +6,99 @@
     <title>Tanaka Tomoko Portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Adobe fonts読み込み -->
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'gjh7iam',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
 </head>
+
 <body>
+<!-- ローディング画面 -->
+    <div class="loading">
+        <div class="loading-text">
+            <span class="char c1">地</span>
+            <span class="char c2">域</span>
+            <span class="char c3">を</span>
+            <span class="char c4">デ</span>
+            <span class="char c5">ザ</span>
+            <span class="char c6">イ</span>
+            <span class="char c7">ン</span>
+            <span class="char c8">す</span>
+            <span class="char c9">る</span>
+            <span class="line"></span>
+        </div>
+    </div>
+
+<!-- グラデーション背景 -->
+    <div class="gradation"></div>
+
+<!-- ヘッダー -->
     <header>
         <h1>Tanaka Tomoko Portfolio</h1>
-        
-        <nav></nav>
-
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="works.html">works</a></li>
+            </ul>
+        </nav>
     </header>
 
+<!-- メインビジュアル -->
+    <section class="main-visual">
+        <img src="./img/main-pc.webp" alt="駒ヶ池と千畳敷">
+        
+        <div class="main-copy">
+            <p>
+                地域を<br>
+                デザイン<br>
+                する
+            </p>
+            <span></span>
+        </div>
+    </section>
 
-    <div class="main-visual">
-        <picture>
-            <img src="./img/main-pc.webp" alt="駒ヶ池と千畳敷">
-        </picture>
-
-        <p>地域をデザインする</p>
-        <span></span>
-    </div>
-
-    <div class="main-text">
-        <p>レンズ越しに見つめてきた、10年の月日。 
-        地域のあたたかな営みに寄り添い、 大切な想いを届けるために、情報を丁寧に紡いできました。
-        一歩ずつ、散歩するようにサイトを巡ってみてください。
-        想いを受け取り、地域をデザインする。
-        誠実な解決と、細部にまで心を配るしなやかな設計で、
-        あなたの明日へ続く道を、そっと彩る存在でありたい。</p>
+    <section class="concept">
+        <div class="concept-text">
+            <p>レンズ越しに見つめてきた、10年の月日。 <br>
+            地域のあたたかな営みに寄り添い、 大切な想いを届けるために、情報を丁寧に紡いできました。
+            一歩ずつ、散歩するようにサイトを巡ってみてください。
+            想いを受け取り、地域をデザインする。
+            誠実な解決と、細部にまで心を配るしなやかな設計で、
+            あなたの明日へ続く道を、そっと彩る存在でありたい。</p>
+        </div>
+    
         <img src="./img/top-img-01.webp" alt="木々">
-    </div>
+    </section>
 
     <section class="top-about-me">
-        <div>
+        <h2>About me</h2>
+
+        <div class="about-inner">
             <img src="./img/tanaka-photo.jpg" alt="田中知子">
-        </div>
  
-        <div class="name">
-            <p class="name-japanese">田中知子</p>
-            <p class="name-english">Tanaka Tomoko</p>
-        </div>
+            <div class="about-text">
+                <p class="name">田中知子</p>
+                <p class="name-en">Tanaka Tomoko</p>
+            </div>
 
-        <div class="name-text">
-            <p>テレビ関係の仕事を10年続けてきた中で、 もっとクオリティの高いテロップを作りたいと始めた副業。 
-            それがいつしか、Webデザインの道を志すきっかけになりました。
-            地元が大好きな私が、 地域のみなさんの悩みにデザインで答えていきます。</p>
-        </div>
+            <div class="name-text">
+                <p>テレビ関係の仕事を10年続けてきた中で、<br>
+                もっとクオリティの高いテロップを作りたいと始めた副業。 <br>
+                それがいつしか、Webデザインの道を志すきっかけになりました。<br>
+                地元が大好きな私が、 地域のみなさんの悩みにデザインで答えていきます。</p>
 
-        <div class="link-about-me">
-            <p>About me</p>
-            <a href="about.html"></a>
-            <span></span>
+                <a href="about.html" class="more-link">About me</a>
+                <span class="about-me-line"></span>
+            </div>
         </div>
     </section>
 
@@ -68,7 +112,7 @@
 
     <footer>
         <img src="./img/top-footer-pc.webp" alt="大田切川">
-        <div>
+        <div class="contact">
             <p>お問い合わせはこちら</p>
         </div>
         <p class="copy-right">
