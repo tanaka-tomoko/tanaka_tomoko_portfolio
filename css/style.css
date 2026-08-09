@@ -2,10 +2,16 @@
 
 /* フォント */
 body {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: normal;
+  font-family: hiragino-kaku-gothic-pron, sans-serif;
+  font-style: normal;
   color: #0D1317;
-  font-size: 20px;
+  font-weight: 300;
+}
+
+.en {
+  font-family: times-new-roman, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* ローディング画面
@@ -76,6 +82,15 @@ body {
 }
 */
 
+/* ヘッダー */
+header {
+  padding: 40px 32px;
+}
+
+h1 {
+  font-size: 20px;      
+}
+
 
 /* グラデーション背景 */
 body {
@@ -103,15 +118,20 @@ body {
     100%{background-position:0% 50%}
 }
 
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
 
 /* トップページ メインビジュアル */
 .main-visual {
-  position: relative;
+  margin-top: 60px;
 }
 
 .main-visual img {
   display: block;
-  width: 900px;
+  width: 100%;
 }
 
 .main-copy {
@@ -129,29 +149,30 @@ body {
     font-size: 24px;
     line-height: 1.2;
     color: #f5f5f5;
+    letter-spacing: 0.3em;
+    line-height: 2;
 }
 
 .main-copy span {
-    display: block;
+    position: absolute;
     width: 1px;
     height: 48px;
     background-color: #f5f5f5;
+    bottom: 12px;
+    left: 24px;
 }
 
 /* トップページ コンセプト */
 .concept {
+  margin-top: 300px;
+}
+
+.concept .wrap{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    max-width: 900px;
-    margin: 300px auto;
-
-    padding: 0 40px;
 }
 
 .concept-text {
-    width: 411px;
+    width: calc(100% - 300px)
 }
 
 .concept-text p {
@@ -161,54 +182,71 @@ body {
 
 .concept-image {
     width: 300px;
+    padding-top: 147px;
 }
 
 .concept-image img {
-    display: block;
-    width: 300px;
+    width: 100%;
 }
 
 /* トップページ About me */
 .top-about-me {
-  max-width: 900px;
-  height: 624px;
-  margin: 300px auto;
+  margin: 300px auto 0;
 }
 
 h2 {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
   font-weight: normal;
 }
 
 .about-inner {
-  max-width: 900px;
-  height: 508px;
-  margin: 88px auto;
+  display: flex;
+  margin-top: 88px;
+  gap: 116px;
 }
 
-.about-inner img {
+.about-inner figure {
   width: 300px;
-  height: 225px;
 }
 
 .about-text {
-  width: 139px;
-  height: 77px;
+  flex: 1;
+  padding-top: 125px;
 }
 
 .name {
-  font-size: 32px;  
+  font-size: 32px;
+  margin-bottom: 8px;
 }
 
 .name-en {
   font-size: 14px;
+  margin-bottom: 40px;
 }
 
-.name-text {
-  width: 478px;
+.name-desc a {
+  font-size: 16px;
+  position: relative;
+}
+
+.name-desc a::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #0D1317;
+  display: block;
+  position: absolute;
+  left: calc(100% + 24px);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translateY(3px);
+}
+
+.name-desc p {
   font-size: 14px;
   line-height: 3.0;
+  margin-bottom: 80px;
 }
 
 .name-text a {
@@ -217,11 +255,75 @@ h2 {
 }
 
 .about-me-line {
+  border: 1px solid #0D1317;
   width: 100px;
 }
 
+/* トップページ Works */
+.top-works {
+  margin: 300px auto 320px;
+}
+
+.top-works h2 {
+  margin-bottom: 80px;
+}
+
+.top-works-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px 100px;
+}
+
+.top-works-inner .item {
+  width: calc((100% - 100px)/2);
+}
+
+.top-works .link {
+  text-align: right;
+  margin-top: 80px;
+}
+
+.top-works .link a {
+  position: relative;
+}
+
+.top-works .link a::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: #0D1317;
+  display: block;
+  position: absolute;
+  left: calc(100% + 24px);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translateY(3px);
+}
+
+
+/* トップページ フッター */
+footer {
+  background-image: url("../img/top-footer-pc.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 190px;
+  padding-bottom: 32px;
+}
+
+footer a {
+  display: block;
+  background: rgba(13,19,23,0.3);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 46px 0;
+}
+
 .copy-right {
-  padding: 32px 0;
+  margin-top: 137px;
   text-align: center;
   font-size: 14px;
   color: #fff;

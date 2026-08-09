@@ -21,7 +21,7 @@
 </head>
 
 <body>
-<!-- ローディング画面 -->
+<!-- ローディング画面
     <div class="loading">
         <div class="loading-text">
             <span class="char c1">地</span>
@@ -35,89 +35,134 @@
             <span class="char c9">る</span>
             <span class="line"></span>
         </div>
-    </div>
+    </div> -->
 
 <!-- グラデーション背景 -->
     <div class="gradation"></div>
 
 <!-- ヘッダー -->
     <header>
-        <h1>Tanaka Tomoko Portfolio</h1>
+        <h1 class="en">Tanaka Tomoko Portfolio</h1>
         <nav>
-            <ul>
+            <!-- <ul>
                 <li><a href="index.html">home</a></li>
                 <li><a href="about.html">about me</a></li>
                 <li><a href="works.html">works</a></li>
-            </ul>
+            </ul> -->
         </nav>
     </header>
 
 <!-- メインビジュアル -->
     <section class="main-visual">
-        <img src="./img/main-pc.webp" alt="駒ヶ池と千畳敷">
-        
-        <div class="main-copy">
-            <p>
-                地域を<br>
-                デザイン<br>
-                する
-            </p>
-            <span></span>
+        <div class="wrap">
+            
+
+            <img src="./img/main-pc.webp" alt="駒ヶ池と千畳敷">
+            
+            <div class="main-copy">
+                <p>
+                    地域を<br>
+                    デザイン<br>
+                    する
+                </p>
+                <span></span>
+            </div>
         </div>
     </section>
 
     <section class="concept">
-        <div class="concept-text">
-            <p>レンズ越しに見つめてきた、10年の月日。 <br>
-            地域のあたたかな営みに寄り添い、 大切な想いを届けるために、情報を丁寧に紡いできました。
-            一歩ずつ、散歩するようにサイトを巡ってみてください。
-            想いを受け取り、地域をデザインする。
-            誠実な解決と、細部にまで心を配るしなやかな設計で、
-            あなたの明日へ続く道を、そっと彩る存在でありたい。</p>
+        <div class="wrap">
+            <div class="concept-text">
+                <p>レンズ越しに見つめてきた、10年の月日。 <br>
+                地域のあたたかな営みに寄り添い、大切な想いを届けるために、<br>
+                情報を丁寧に紡いできました。<br>
+                一歩ずつ、散歩するようにサイトを巡ってみてください。<br>
+                想いを受け取り、地域をデザインする。<br>
+                誠実な解決と、細部にまで心を配るしなやかな設計で、<br>
+                あなたの明日へ続く道を、そっと彩る存在でありたい。</p>
+            </div>
+            <figure class="concept-image">
+                <img src="./img/top-img-01.webp" alt="木々">
+            </figure>
         </div>
-    
-        <img src="./img/top-img-01.webp" alt="木々">
     </section>
 
     <section class="top-about-me">
-        <h2>About me</h2>
+        <div class="wrap">
+            <h2 class="en">About me</h2>
 
-        <div class="about-inner">
-            <img src="./img/tanaka-photo.jpg" alt="田中知子">
- 
-            <div class="about-text">
-                <p class="name">田中知子</p>
-                <p class="name-en">Tanaka Tomoko</p>
-            </div>
+            <div class="about-inner">
+                <figure>
+                    <img src="./img/tanaka-photo.jpg" alt="田中知子">
+                </figure>
+    
+                <div class="about-text">
+                    <div class="about-name">
+                        <p class="name">田中知子</p>
+                        <p class="name-en">Tanaka Tomoko</p>
+                    </div>
 
-            <div class="name-text">
-                <p>テレビ関係の仕事を10年続けてきた中で、<br>
-                もっとクオリティの高いテロップを作りたいと始めた副業。 <br>
-                それがいつしか、Webデザインの道を志すきっかけになりました。<br>
-                地元が大好きな私が、 地域のみなさんの悩みにデザインで答えていきます。</p>
+                    <div class="name-desc">
+                        <p>テレビ関係の仕事を10年続けてきた中で、<br>
+                        もっとクオリティの高いテロップを作りたいと始めた副業。 <br>
+                        それがいつしか、Webデザインの道を志すきっかけになりました。<br>
+                        地元が大好きな私が、 地域のみなさんの悩みにデザインで答えていきます。</p>
 
-                <a href="about.html" class="more-link">About me</a>
-                <span class="about-me-line"></span>
+                        <a href="about.html" class="en">About me</a>
+                        <!-- <span class="about-me-line"></span> -->
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="top-works">
-        <div>
-            <p>View all</p>
-            <a href="works.html"></a>
-            <span></span>
+        <div class="wrap">
+            <h2 class="en">Works</h2>
+
+            <div class="top-works-inner">
+                <!-- divをa hrefに変えてリンク -->
+                <a href="dezasuta-icecream.html" class="item">
+                    <figure>
+                        <img src="./img/dezasuta-icecream.png" alt="バナー｜アイスクリームショップの夏限定フレーバー広告（架空）">
+                    </figure>
+                </a>
+
+                <a href="dezasuta-burger.html" class="item">
+                    <figure>
+                        <img src="./img/dezasuta-burger.png" alt="バナー｜ハンバーガー新商品の告知 高級版（架空）">
+                    </figure>
+                </a>
+
+                <a href="life-hair-design.html" class="item">
+                    <figure>
+                        <img src="./img/lP02.png" alt="LP｜LIFE hair design（架空）">
+                    </figure>
+                </a>
+
+                <a href="design-cafe.html" class="item">
+                    <figure>
+                        <img src="./img/coding-designcafe.png" alt="Web｜DESIGN CAFE（架空）">
+                    </figure>
+                </a>
+            </div>
+
+            <div class="link">
+                <a href="works.html" class="en">View all</a>
+                <!-- <span class="works-line"></span> -->
+            </div>
+
         </div>
     </section>
 
     <footer>
-        <img src="./img/top-footer-pc.webp" alt="大田切川">
-        <div class="contact">
-            <p>お問い合わせはこちら</p>
+        <!-- <img src="./img/top-footer-pc.webp" alt="大田切川"> -->
+        <div class="wrap">
+            <a href="#">お問い合わせはこちら</a>
+            <p class="copy-right">
+                （C）2026 Tanaka Tomoko
+            </p>
         </div>
-        <p class="copy-right">
-            （C）2026 Tanaka Tomoko
-        </p>
     </footer>
 </body>
 </html>
