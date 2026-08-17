@@ -105,7 +105,7 @@ body {
   display: flex;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(270deg, #FFFFFF, #87BFEA);
+  background: linear-gradient(270deg, #FFFFFF, #cee3f4);
   background-size: 200% 200%;
   animation: Grad 5s ease infinite;
   align-items: center;
@@ -272,6 +272,8 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 80px 100px;
+  max-width: 690px;
+  margin: 0 auto;
 }
 
 .top-works-inner .item {
@@ -285,6 +287,7 @@ h2 {
 
 .top-works .link a {
   position: relative;
+  right: 125px;
 }
 
 .top-works .link a::after {
@@ -303,7 +306,7 @@ h2 {
 
 
 /* トップページ フッター */
-footer {
+footer.top {
   background-image: url("../img/top-footer-pc.webp");
   background-position: center center;
   background-repeat: no-repeat;
@@ -312,7 +315,7 @@ footer {
   padding-bottom: 32px;
 }
 
-footer a {
+footer.top a {
   display: block;
   background: rgba(13,19,23,0.3);
   border: 2px solid rgba(255, 255, 255, 0.6);
@@ -327,4 +330,215 @@ footer a {
   text-align: center;
   font-size: 14px;
   color: #fff;
+}
+
+
+/* About meページ */
+.about-me-main{
+  width: 100%;
+  height: 1200px;
+  position: relative;
+  background-size: cover;
+  background-image: url("../img/about-me-top-pc.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 303px;
+}
+
+.about-me-copy {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    position: relative;
+}
+
+.about-me-copy p {
+  writing-mode: vertical-rl;
+  font-family: hiragino-mincho-pron, sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #f5f5f5;
+  letter-spacing: 0.3em;
+  line-height: 2;
+  margin: 0 auto;
+}
+
+.about-me-copy span {
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  background-color: #f5f5f5;
+  bottom: 12px;
+  left: 24px;
+}
+
+/* デザスタモバイルページ */
+.work-detail .en {
+    margin: 73px 0 60px;
+    text-align: center;
+    font-size: 44px;
+}
+
+.work-title {
+    margin-bottom:32px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.work-mockup {
+    width: 400px;
+    margin: 0 auto 35px;
+}
+
+.work-mockup img {
+    width: 100%;
+}
+
+.work-info {
+    width: 400px;
+    margin: 0 auto 32px;
+}
+
+.work-info_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.work-info dt,
+.work-info dd {
+    width: calc((100% - 66px)/2);
+    margin: 0;
+    font-size: 14px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.work-info dt {
+    grid-column: 1;
+    padding-left: 82px;
+}
+
+.work-info_item::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    width: 66px;
+    height: 1px;
+    background-color: #0D1317;
+}
+
+.work-info dd {
+    grid-column: 3;
+    padding-left: 17px;
+}
+
+.work-info-text {
+    width: 400px;
+    margin: 0 auto 80px;
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+.work-design {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.work-design img {
+    width: 100%;
+}
+
+.works-nav {
+    max-width: 812px;
+    margin: 180px auto 262px;
+}
+
+.nav-nav_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+    gap: 334px;
+}
+
+.nav-nav_item {
+    width: 80px;
+    text-align: center;
+}
+
+.nav-nav_item.disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-nav_link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 22px;
+    color: #111;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.nav-nav_link-prev::after,
+.nav-nav_link-next::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 34px;
+    height: 1px;
+    background-color: #111;
+}
+
+.nav-nav_link-prev::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-nav_link-next::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.nav-nav_link-prev::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    bottom: 2px;
+    width: 7px;
+    height: 1px;
+    background-color: #111;
+    transform: rotate(-30deg);
+}
+
+.nav-nav_link-next::before {
+    content: "";
+    position: absolute;
+    right: -4px;
+    bottom: 2px;
+    width: 7px;
+    height: 1px;
+    background-color: #111;
+    transform: rotate(30deg);
+}
+
+footer.sub {
+    margin-top: 300px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+footer.sub .copy-right {
+    margin: 0;
+    font-size: 14px;
+    color: #0D1317;
 }

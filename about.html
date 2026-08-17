@@ -6,24 +6,44 @@
     <title>About me</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+<!-- Adobe fonts読み込み -->
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'gjh7iam',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
 </head>
 <body>
+<!-- グラデーション背景 -->
+    <div class="gradation"></div>
+
     <h1>Tanaka Tomoko Portfolio</h1>
 
     <nav></nav>
 
-    <div class="about-me-main">
-        <picture>
+    <section class="about-me-main">
+        <!-- <picture>
             <img src="./img/about-me-top-pc.webp" alt="南アルプスを望む">
-        </picture>
+        </picture> -->
 
-        <p>地域をデザインする</p>
-        <span></span>
-    </div>
+        <div class="about-me-copy">
+            <p>
+                地域を<br>
+                デザイン<br>
+                する
+            </p>
+            <span></span>
+        </div>
+    </section>
 
     <div class="about-me-top">
-        <h2>About me</h2>
-
+        <h2 class="en">About me</h2>
         <picture>
             <img src="./img/tanaka-photo.jpg" alt="田中知子">
         </picture>
@@ -75,7 +95,7 @@
         <img src="./img/portfolio_icon-06.webp" alt=" VS Code">
     </div>
 
-    <footer>
+    <footer class="sub">
         <p class="copy-right">
             （C）2026 Tanaka Tomoko
         </p>

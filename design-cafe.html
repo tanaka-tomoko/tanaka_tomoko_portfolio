@@ -6,15 +6,42 @@
     <title>Webサイト作品例 DESIGN CAFE</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+<!-- Adobe fonts読み込み -->
+<script>
+    (function(d) {
+        var config = {
+        kitId: 'gjh7iam',
+        scriptTimeout: 3000,
+        async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+</script>
 </head>
-<body>
-    <h1>Tanaka Tomoko Portfolio</h1>
 
-    <nav></nav>
-    
-    <h2>Works</h2>
+<body>
+<!-- グラデーション背景 -->
+    <div class="gradation"></div>
+
+<!-- ヘッダー -->
+<header>
+    <h1 class="en">Tanaka Tomoko Portfolio</h1>
+    <nav>
+        <!-- <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="works.html">works</a></li>
+        </ul> -->
+    </nav>
+</header>
+
+<!-- 作品紹介 -->
+<main class="work-detail">
+    <h2 class="en">Works</h2>
     <p>Web｜DESIGN CAFE（架空）</p>
-    <img src="./img/coding-designcafe.png">
+    <figure class="work-mockup">
+        <img src="./img/coding-designcafe.png" alt="DESIGN CAFEサイトイメージ">
+    </figure>
 
     <div>
         <p>作品公開ページへ</p>
@@ -43,38 +70,39 @@
         </div>
     </dl>
 
-    <div class="work-info-text">
+    <p class="work-info-text">
         PC版とスマートフォン版でレイアウトを切り替え、画面サイズに応じて画像やテキストが見やすく表示されるようレスポンシブ対応を行いました。
         ハンバーガーメニューやページトップボタンを実装し、操作性の向上にも配慮しました。
-    </div>
+    </p>
 
-    <div class="lp-hair-salon">
-        <img src="./img/lp02-pc.png">
-    </div>
+<!-- worksナビゲーション -->
+<nav class="works-nav">
+    <ul class="nav-nav_list">
+        <li class="nav-nav_item">
+            <a href="./life-hair-design.html" class="nav-nav_link nav-nav_link-prev">
+            <span>前へ</span>
+            </a>
+        </li>
 
-    <!-- worksナビゲーション -->
-    <nav class="works-nav">
-        <ul class="nav-nav_list">
+        <li class="nav-nav_item">
+            <a href="works.html" class="nav-nav_link">
+                <span>一覧</span>
+            </a>
+        </li>
 
-            <li class="nav-nav_item">
-                <a href="./life-hair-design.html" class="nav-nav_link nav-nav_link-prev">
-                <span>前へ</span>
-                </a>
-            </li>
+        <li class="nav-nav_item disabled">
+            <a href="dezasuta-icecream.html" class="nav-nav_link nav-nav_link-next">
+                <span>次へ</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 
-            <li class="nav-nav_item">
-                <a href="./works.html" class="nav-nav_link">
-               <span>一覧</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-
-    <footer>
-        <p class="copy-right">
-            （C）2026 Tanaka Tomoko
-        </p>
-    </footer>
+<footer class="sub">
+    <p class="copy-right">
+        （C）2026 Tanaka Tomoko
+    </p>
+</footer>
     
 </body>
 </html>

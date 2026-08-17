@@ -6,16 +6,43 @@
     <title>バナー作品例 ハンバーガー新商品 高級版</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+<!-- Adobe fonts読み込み -->
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'gjh7iam',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
 </head>
 <body>
-    <h1>Tanaka Tomoko Portfolio</h1>
+<!-- グラデーション背景 -->
+    <div class="gradation"></div>
 
-    <nav></nav>
-    
-    <h2>Works</h2>
-    <p>バナー｜ハンバーガー新商品の告知
+<!-- ヘッダー -->
+<header>
+    <h1 class="en">Tanaka Tomoko Portfolio</h1>
+    <nav>
+        <!-- <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="works.html">works</a></li>
+        </ul> -->
+    </nav>
+</header>
+
+<!-- 作品紹介 -->
+<main class="work-detail">
+
+    <h2 class="en">Works</h2>
+    <p>バナー｜ハンバーガー新商品の告知<br>
     高級版（架空）</p>
-    <img src="./img/dezasuta-burger.png">
+    <figure class="work-mockup">
+    <img src="./img/dezasuta-burger.png" alt="ハンバーガー新商品の高級バナー掲載イメージ">
+    </figure>
 
     <dl class="work-info">
         <div class="work-info_item">
@@ -39,15 +66,17 @@
         </div>
     </dl>
 
-    <div class="work-info-text">
+    <p class="work-info-text">
         新商品の認知拡大を目的としたSNS広告バナーを制作。
         A/Bテストを想定し、「高級感」と「POP」の2パターンを制作しました。
         Instagram・X掲載用として、正方形と横長サイズを展開しています。
         黒背景と金のグラデーション文字で高級感を演出。明朝体で統一、落ち着いた雰囲気に仕上げました。
-    </div>
+    </p>
 
-    <img src="./img/dezasuta-burger-design-instagram.jpg">
-    <img src="./img/dezasuta-burger-design-x.jpg">
+    <figure class="work-design">
+        <img src="./img/dezasuta-burger-design-instagram.jpg" alt="ハンバーガー新商品のインスタグラム バナーデザイン">
+        <img src="./img/dezasuta-burger-design-x.jpg" alt="ハンバーガー新商品のエックス バナーデザイン">
+    </figure>
 
     <!-- worksナビゲーション -->
     <nav class="works-nav">
@@ -65,7 +94,7 @@
                 </a>
             </li>
 
-            <li class="nav-nav__item">
+            <li class="nav-nav_item">
                 <a href="./dezasuta-burger02.html" class="nav-nav_link nav-nav_link-next">
                 <span>次へ</span>
                 </a>
@@ -73,7 +102,7 @@
         </ul>
     </nav>
 
-    <footer>
+    <footer class="sub">
         <p class="copy-right">
             （C）2026 Tanaka Tomoko
         </p>

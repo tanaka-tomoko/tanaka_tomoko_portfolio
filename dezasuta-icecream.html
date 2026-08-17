@@ -6,76 +6,105 @@
     <title>バナー作品例 アイスクリームショップ</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+<!-- Adobe fonts読み込み -->
+    <script>
+        (function(d) {
+            var config = {
+            kitId: 'gjh7iam',
+            scriptTimeout: 3000,
+            async: true
+            },
+            h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
 </head>
 <body>
-    <h1>Tanaka Tomoko Portfolio</h1>
+<!-- グラデーション背景 -->
+    <div class="gradation"></div>
 
-    <nav></nav>
-    
-    <h2>Works</h2>
-    <p>バナー｜アイスクリームショップの
-    夏限定フレーバー広告（架空）</p>
-    <img src="./img/dezasuta-icecream.png">
+<!-- ヘッダー -->
+<header>
+    <h1 class="en">Tanaka Tomoko Portfolio</h1>
+    <nav>
+        <!-- <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about me</a></li>
+            <li><a href="works.html">works</a></li>
+        </ul> -->
+    </nav>
+</header>
 
-    <dl class="work-info">
-        <div class="work-info_item">
-            <dt>制作年月</dt>
-            <dd>2026.03</dd>
-        </div>
+<!-- 作品紹介 -->
+<main class="work-detail">
 
-        <div class="work-info_item">
-            <dt>担当範囲</dt>
-            <dd>構成 / デザイン制作</dd>
-        </div>
+<h2 class="en">Works</h2>
+<p>バナー｜アイスクリームショップの<br>
+夏限定フレーバー広告（架空）</p>
+<figure class="work-mockup">
+    <img src="./img/dezasuta-icecream.png"" alt="アイスクリームショップのバナー掲載イメージ">
+</figure>
 
-        <div class="work-info_item">
-            <dt>使用ツール</dt>
-            <dd>Illustrator / Photoshop</dd>
-        </div>
-
-        <div class="work-info_item">
-            <dt>制作期間</dt>
-            <dd>1週間</dd>
-        </div>
-    </dl>
-
-    <div class="work-info-text">
-        アイスをアシンメトリーに配置し、動きのあるレイアウトにすることで、夏のワクワク感を表現しました。
-        フレーバーごとに背景色を変え、商品の違いが直感的に伝わるよう設計。
-        また、太めのゴシック体で統一し、SNS上でも視認性の高いデザインを意識しました。
+<dl class="work-info">
+    <div class="work-info_item">
+        <dt>制作年月</dt>
+        <dd>2026.03</dd>
     </div>
 
-    <img src="./img/dezasuta-icecream-design.jpg">
+    <div class="work-info_item">
+        <dt>担当範囲</dt>
+        <dd>構成 / デザイン制作</dd>
+    </div>
 
-    <!-- worksナビゲーション -->
-    <nav class="works-nav">
-        <ul class="nav-nav_list">
+    <div class="work-info_item">
+        <dt>使用ツール</dt>
+        <dd>Illustrator / Photoshop</dd>
+    </div>
 
-            <li class="nav-nav_item">
-                <a href="./dezasuta-mobaile.html" class="nav-nav_link nav-nav_link-prev">
-                <span>前へ</span>
-                </a>
-            </li>
+    <div class="work-info_item">
+        <dt>制作期間</dt>
+        <dd>1週間</dd>
+    </div>
+</dl>
 
-            <li class="nav-nav_item">
-                <a href="./works.html" class="nav-nav_link">
-               <span>一覧</span>
-                </a>
-            </li>
+<div class="work-info-text">
+    アイスをアシンメトリーに配置し、動きのあるレイアウトにすることで、夏のワクワク感を表現しました。
+    フレーバーごとに背景色を変え、商品の違いが直感的に伝わるよう設計。
+    また、太めのゴシック体で統一し、SNS上でも視認性の高いデザインを意識しました。
+</div>
 
-            <li class="nav-nav_item">
-                <a href="dezasuta-burger.html" class="nav-nav_link nav-nav_link-next">
-                <span>次へ</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<figure class="work-design">
+    <img src="./img/dezasuta-icecream-design.jpg" alt="アイスクリームショップのバナーデザイン">
+</figure>
 
-    <footer>
-        <p class="copy-right">
-            （C）2026 Tanaka Tomoko
-        </p>
-    </footer>
-    
+<!-- worksナビゲーション -->
+<nav class="works-nav">
+    <ul class="nav-nav_list">
+        <li class="nav-nav_item">
+            <a href="./dezasuta-mobile.html" class="nav-nav_link nav-nav_link-prev">
+            <span>前へ</span>
+            </a>
+        </li>
+
+        <li class="nav-nav_item">
+            <a href="./works.html" class="nav-nav_link">
+            <span>一覧</span>
+            </a>
+        </li>
+
+        <li class="nav-nav_item">
+            <a href="dezasuta-burger.html" class="nav-nav_link nav-nav_link-next">
+            <span>次へ</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<footer class="sub">
+    <p class="copy-right">
+        （C）2026 Tanaka Tomoko
+    </p>
+</footer>
+
 </body>
 </html>
