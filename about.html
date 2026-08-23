@@ -6,7 +6,9 @@
     <title>About me</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-<!-- Adobe fonts読み込み -->
+    <script defer src="./js/script.js"></script>
+
+    <!-- Adobe fonts読み込み -->
     <script>
         (function(d) {
             var config = {
@@ -17,88 +19,210 @@
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
     </script>
-
 </head>
+
 <body>
 <!-- グラデーション背景 -->
-    <div class="gradation"></div>
+<div class="gradation"></div>
 
-    <h1>Tanaka Tomoko Portfolio</h1>
+<!-- ヘッダー -->
+    <header>
+        <h1 class="en"><a href="index.html">Tanaka Tomoko Portfolio<a></h1>
+        <div class="nav-box">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about me</a></li>
+                    <li><a href="works.html">works</a></li>
+                </ul>
+            </nav>
 
-    <nav></nav>
-
-    <section class="about-me-main">
-        <!-- <picture>
-            <img src="./img/about-me-top-pc.webp" alt="南アルプスを望む">
-        </picture> -->
-
-        <div class="about-me-copy">
-            <p>
-                地域を<br>
-                デザイン<br>
-                する
-            </p>
+            <div class="site-name en">
+                <span>Tanaka Tomoko Portfolio</span>
+            </div>
+        </div>
+        <div class="nav-button">
+            <span></span>
+            <span></span>
             <span></span>
         </div>
-    </section>
+    </header>
 
-    <div class="about-me-top">
+<section class="about-me-main">
+    <!-- <picture>
+        <img src="./img/about-me-top-pc.webp" alt="南アルプスを望む">
+    </picture> -->
+
+    <div class="about-me-copy">
+        <p>
+            地域を<br>
+            デザイン<br>
+            する
+        </p>
+        <span></span>
+    </div>
+</section>
+
+<section class="about-me-top">
+    <div class="wrap">
         <h2 class="en">About me</h2>
-        <picture>
+        <figure>
             <img src="./img/tanaka-photo.jpg" alt="田中知子">
-        </picture>
+        </figure>
+        <div class="name">
+            <div class="name-inner">
+                <p class="alpha">Tanaka Tomoko</p>
+                <p class="ja">田中知子</p>
+            </div>
+        </div>
 
-        <p>田中 知子</p>
-        <p>Tanaka Tomoko</p>
-        <p>1986年9月生まれ</p>
-        <p>長野県 南信在住</p>
+        <p class="birth">1986年9月生まれ<br>
+        長野県 南信在住</p>
+    </div>
+</section>
+
+<section class="about-me-history">
+    <div class="wrap">
 
         <div>
-            <h3>私の歩み</h3>
-            <p>京都外国語大学 イスパニア語学科（現 スペイン語学科）卒業
-            在学中のスペイン短期留学をきっかけに地元の良さを実感
-            地元テレビ局に就職し、放送の仕事に携わる
-            カメラ・原稿・編集・アナウンスなど幅広い業務を担当
-            結婚・出産後、放送業務の経験をいかすため広告代理店に転職
-            動画制作をメインにグラフィックデザインも手掛ける
-            副業2年でSNSの投稿作成など400本以上納品
+            <h3 class="mincho">私の歩み</h3>
+            <p>京都外国語大学 イスパニア語学科（現 スペイン語学科）卒業<br>
+            在学中のスペイン短期留学をきっかけに地元の良さを実感</p>
+
+            <p>地元テレビ局に就職し、放送の仕事に携わる<br>
+            カメラ・原稿・編集・アナウンスなど幅広い業務を担当</p>
+
+            <p>結婚・出産後、放送業務の経験をいかすため広告代理店に転職<br>
+            動画制作をメインにグラフィックデザインも手掛ける</p>
+
+            <p>
+            副業2年でSNSの投稿作成など400本以上納品<br>
             2026年3月 Webデザインスクールに入会し、デザインとコーディングを基礎から学ぶ</p>
         </div>
-    </div>
 
-    <picture>
-        <img src="./img/about-me-01.webp" alt="スペイン アルハンブラ宮殿">
-        <img src="./img/about-me-02.webp" alt="滝を撮影する">
-    </picture>
-
-    <div>
-        <h3>私の想い</h3>
-        <p>地元が好き
-        気づかれていない魅力を、伝わる形に
-        デザインで地元のみなさんの悩みを解決します。</p>
-    </div>
-
-    <picture>
-        <img src="./img/about-me-03.webp" alt="山から見下ろす景色">
-    </picture>
-
-    <div class="tool">
-        <p>使用できるツール</p>
-        <p>詳細は各アイコンをクリック</p>
+        <figure class="fig1">
+            <img src="./img/about-me-01.webp" alt="スペイン アルハンブラ宮殿">
+        </figure>
         
-        <!-- アイコン -->
-        <img src="./img/portfolio_icon-01.webp" alt=" Illustrator">
-        <img src="./img/portfolio_icon-02.webp" alt=" Photoshop">
-        <img src="./img/portfolio_icon-03.webp" alt=" Canva">
-        <img src="./img/portfolio_icon-04.webp" alt=" Premiere">
-        <img src="./img/portfolio_icon-05.webp" alt=" Figma">
-        <img src="./img/portfolio_icon-06.webp" alt=" VS Code">
+        <figure class="fig2">
+            <img src="./img/about-me-02.webp" alt="滝を撮影する">
+        </figure>
     </div>
+</section>
 
-    <footer class="sub">
-        <p class="copy-right">
-            （C）2026 Tanaka Tomoko
-        </p>
-    </footer>
+
+<section class="about-me-feelings">
+    <div class="wrap">
+
+    <h3 class="mincho">私の想い</h3>
+    <p>
+    <span>地元が好き</span><br>
+    気づかれていない魅力を、伝わる形に<br>
+    デザインで地元のみなさんの悩みを解決します。</p>
+    </div>
+</section>
+
+<section class="about-me-image">
+    <figure>
+        <img src="./img/about-me-03.webp" alt="山から見下ろす景色">
+    </figure>
+</section>
+
+<section class="skills">
+    <h3 class="mincho">使用できるツール</h3>
+    <p class="tool-detail">詳細は各アイコンをクリック</p>
+
+    <ul class="skill-list">
+        <li class="skill-item">
+            <figure>
+                <img src="./img/portfolio_icon-01.webp" alt="Illustrator">
+            </figure>
+
+            <p class="skill-name">
+                Illustrator
+            </p>
+
+            <p class="skill-text">
+                細部まで心を配る、丁寧な描画
+            </p>
+        </li>
+
+        <li class="skill-item">
+            <figure>
+                <img src="./img/portfolio_icon-02.webp" alt="Photoshop">
+            </figure>
+
+            <p class="skill-name">
+                Photoshop
+            </p>
+
+            <p class="skill-text">
+                世界観を大切にする、自然な写真加工
+            </p>
+        </li>
+
+        <li class="skill-item">
+            <figure>
+                <img src="./img/portfolio_icon-03.webp" alt="Premiere">
+            </figure>
+
+            <p class="skill-name">
+                Premiere
+            </p>
+
+            <p class="skill-text">
+                10年の経験を活かした、伝わる動画制作
+            </p>
+        </li>
+
+        <li class="skill-item">
+            <figure>
+                <img src="./img/portfolio_icon-04.webp" alt="Canva">
+            </figure>
+
+            <p class="skill-name">
+                Canva
+            </p>
+
+            <p class="skill-text">
+                スピード感と質を両立したデザイン
+            </p>
+        </li>
+
+        <li class="skill-item">
+            <figure>
+                <img src="./img/portfolio_icon-05.webp" alt="Figma">
+            </figure>
+
+            <p class="skill-name">
+                Figma
+            </p>
+
+            <p class="skill-text">
+                整理整頓された、使いやすいデータ作り
+            </p>
+        </li>
+
+        <li class="skill-item">
+            <figure>
+                <img src="./img/portfolio_icon-06.webp" alt="VS Code">
+            </figure>
+
+            <p class="skill-name">
+                VS Code
+            </p>
+
+            <p class="skill-text">
+                仕組みを理解し、デザインを形にする
+            </p>
+        </li>
+    </ul>
+</section>
+
+<footer class="sub">
+    <p class="copy-right">
+        （C）2026 Tanaka Tomoko
+    </p>
+</footer>
 </body>
 </html>

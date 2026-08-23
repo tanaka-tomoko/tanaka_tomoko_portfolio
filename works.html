@@ -6,7 +6,9 @@
     <title>Works一覧</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-<!-- Adobe fonts読み込み -->
+    <script defer src="./js/script.js"></script>
+
+    <!-- Adobe fonts読み込み -->
     <script>
         (function(d) {
             var config = {
@@ -17,25 +19,51 @@
             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
     </script>
-
 </head>
+
 <body>
-    <h1>Tanaka Tomoko Portfolio</h1>
+<!-- グラデーション背景 -->
+    <div class="gradation"></div>
 
-    <nav></nav>
+<!-- ヘッダー -->
+    <header>
+        <h1 class="en"><a href="index.html">Tanaka Tomoko Portfolio<a></h1>
+        <div class="nav-box">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about me</a></li>
+                    <li><a href="works.html">works</a></li>
+                </ul>
+            </nav>
 
-    <h2>Works</h2>
+            <div class="site-name en">
+                <span>Tanaka Tomoko Portfolio</span>
+            </div>
+        </div>
+        <div class="nav-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
 
-    <div>バナー</div>
-    <div>LP</div>
-    <div>Web</div>
+<!-- 作品一覧 -->
+<main class="works-all">
+    <h2 class="en">Works</h2>
 
-    <section>
+    <ul class="select-list">
+        <li class="select-item">バナー</li>
+        <li class="select-item">LP</li>
+        <li class="select-item">Web</li>
+    </ul>
+
+    <section class="works-area">
         <ul class="works-list">
 
             <li class="work-item">
                 <a href="dezasuta-mobile.html">
-                <img src="./img/dezasuta-mobaile.png">
+                <img src="./img/dezasuta-mobile.png">
                 <p>バナー｜スマホ学割プラン（架空）</p>
                 </a>
             </li>
@@ -43,50 +71,58 @@
             <li class="work-item">
                 <a href="dezasuta-icecream.html">
                 <img src="./img/dezasuta-icecream.png">
-                <p>バナー｜アイスクリームショップの夏限定フレーバー広告（架空）</p>
+                <p>バナー｜アイスクリームショップの<br>
+                    夏限定フレーバー広告（架空）</p>
                 </a>
             </li>
 
             <li class="work-item">
                 <a href="dezasuta-burger.html">
                 <img src="./img/dezasuta-burger.png">
-                <p>バナー｜ハンバーガー新商品の告知高級版（架空）</p>
+                <p>バナー｜ハンバーガー新商品の告知<br>
+                    高級版（架空）</p>
                 </a>
             </li>
 
             <li class="work-item">
                 <a href="dezasuta-burger02.html">
                 <img src="./img/dezasuta-burger02.png">
-                <p>バナー｜ハンバーガー新商品の告知POP版（架空）</p>
+                <p>バナー｜ハンバーガー新商品の告知<br>
+                    POP版（架空）</p>
                 </a>
             </li>
 
             <li class="work-item">
                 <a href="coworking-space.html">
                 <img src="./img/lp01.png">
-                <p>LP｜会員制コワーキングスペース（架空）</p>
+                <p>LP｜会員制コワーキングスペース<br>
+                    （架空）</p>
                 </a>
             </li>
 
             <li class="work-item">
                 <a href="life-hair-design.html">
                 <img src="./img/lP02.png">
-                <p>LP｜LIFE hair  design（架空）</p>
+                <p>LP｜LIFE hair  design<br>
+                    （架空）</p>
                 </a>
             </li>
 
             <li class="work-item">
                 <a href="design-cafe.html">
                 <img src="./img/coding-designcafe.png">
-                <p>Web｜DESIGN CAFE（架空）</p>
+                <p>Web｜DESIGN CAFE<br>
+                    （架空）</p>
                 </a>
             </li>
+        </ul>
     </section>
+</main>
 
-    <footer class="sub">
-        <p class="copy-right">
-            （C）2026 Tanaka Tomoko
-        </p>
-    </footer>
+<footer class="sub">
+    <p class="copy-right">
+        （C）2026 Tanaka Tomoko
+    </p>
+</footer>
 </body>
 </html>
