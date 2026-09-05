@@ -21,8 +21,8 @@
     </script>
 </head>
 
-<body>
-<!-- ローディング画面 -->
+<body class="top">
+<!-- ローディング画面
     <div class="loading">
         <div class="loading-text">
             <span class="char c1">地</span>
@@ -36,13 +36,13 @@
             <span class="char c9">る</span>
             <span class="line"></span>
         </div>
-    </div>
+    </div> -->
 
 <!-- グラデーション背景 -->
     <div class="gradation"></div>
 
 <!-- ヘッダー -->
-    <header>
+    <header class="top">
         <h1 class="en"><a href="index.html">Tanaka Tomoko Portfolio<a></h1>
         <div class="nav-box">
             <nav>
@@ -69,15 +69,22 @@
         <div class="wrap">
             
 
-            <img src="./img/main-pc.webp" alt="駒ヶ池と千畳敷">
+            <!-- <img src="./img/main-pc.webp" alt="駒ヶ池と千畳敷"> -->
+
+            <picture>
+                <source srcset="./img/main-sp.webp" media="(max-width: 768px)" type="image/webp">
+                <img src="./img/main-pc.webp" alt=”駒ヶ池と千畳敷”>
+            </picture>
             
             <div class="main-copy">
-                <p>
-                    地域を<br>
-                    デザイン<br>
-                    する
-                </p>
-                <span></span>
+                <div class="main-copy-inner">
+                    <p>
+                        地域を<br>
+                        デザイン<br>
+                        する
+                    </p>
+                    <span></span>
+                </div>
             </div>
         </div>
     </section>
@@ -120,7 +127,9 @@
                         それがいつしか、Webデザインの道を志すきっかけになりました。<br>
                         地元が大好きな私が、 地域のみなさんの悩みにデザインで答えていきます。</p>
 
-                        <a href="about.html" class="en">About me</a>
+                        <div class="about-me-link">
+                            <a href="about.html" class="en">About me</a>
+                        </div>
                         <!-- <span class="about-me-line"></span> -->
                     </div>
                 </div>
@@ -169,11 +178,28 @@
     <footer class="top">
         <!-- <img src="./img/top-footer-pc.webp" alt="大田切川"> -->
         <div class="wrap">
-            <a href="#">お問い合わせはこちら</a>
+            <script type="text/javascript">
+                <!--
+                function converter(M){
+                var str="", str_as="";
+                for(var i=0;i<M.length;i++){
+                str_as = M.charCodeAt(i);
+                str += String.fromCharCode(str_as + 1);
+                }
+                return str;
+                }
+                var ad = converter(String.fromCharCode(115,110,108,110,106,110,49,47,45,49)+String.fromCharCode(51,115,96,109,96,106,96,63,102,108,96,104,107,45,98,110,108));
+                document.write("<a href=\"mai"+"lto:"+ad+"\">"+'お問い合わせはこちら'+"<\/a>");
+                //-->
+            </script>
+
             <p class="copy-right">
                 （C）2026 Tanaka Tomoko
             </p>
         </div>
+
+
+
     </footer>
 </body>
 </html>
