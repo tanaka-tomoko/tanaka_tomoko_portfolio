@@ -408,7 +408,6 @@ h2 {
   }
 }
 
-
 .about-inner figure {
   width: 300px;
 }
@@ -545,6 +544,14 @@ h2 {
 .top-works .link a:hover::after {
   background-color: #87bfea;
 }
+@media screen and (max-width: 600px) {
+  .top-works-inner {
+    flex-direction: column;
+  }
+  .top-works-inner .item {
+    width: 100%;
+  }
+}
 
 
 /* トップページ フッター */
@@ -596,11 +603,10 @@ footer.top a {
 }
 
 
-
 /* About meページ */
 .about-me-main{
   width: 100%;
-  height: 1200px;
+  height: 100vh;
   position: relative;
   background-size: cover;
   background-image: url("../img/about-me-top-pc.webp");
@@ -610,6 +616,8 @@ footer.top a {
   justify-content: center;
   align-items: flex-start;
   padding-top: 303px;
+  box-sizing: border-box;
+
 }
 
 .about-me-copy {
@@ -794,6 +802,36 @@ footer.top a {
     line-height: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .about-me-top h2 {
+    font-size: 24px;
+  }
+  .about-me-feelings .wrap {
+    padding: 0;
+  }
+  .about-me-top figure {
+    width: 100%;
+  }
+  .about-me-image {
+    margin: 300px 0;
+  }
+  .skill-list {
+    flex-direction: column;
+  }
+  .skill-item {
+    width: 100%;
+  }
+  .about-me-history .fig1 {
+    margin-right: auto;
+  }
+
+  .about-me-history .fig1,
+  .about-me-history .fig2 {
+    width: 67%;
+  }
+}
+
+
 /* Works 一覧ページ */
 .works-all .en {
   font-size: 44px;
@@ -861,13 +899,29 @@ footer.top a {
   transform: scaleX(1);
 }
 
+@media screen and (max-width: 768px) {
+  .works-all .en {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .works-list {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .work-item {
+    width: 100%;
+  }
+}
+
+
 /* .ロゴsub-pages__site-title {
   position: absolute;
   font-size: 20px;
   top: 41px;
   left: 32px;
 } */
-
 
 
 /* Works 各ページ */
@@ -878,7 +932,7 @@ footer.top a {
 }
 
 .work-title {
-  margin-bottom:32px;
+  margin-bottom: 32px;
   text-align: center;
   font-size: 14px;
   line-height: 1.4;
@@ -979,7 +1033,6 @@ footer.top a {
   font-size: 14px;
 }
 
-
 .works-nav {
     max-width: 812px;
     margin: 180px auto 262px;
@@ -992,7 +1045,7 @@ footer.top a {
     justify-content: space-between;
     align-items: flex-start;
     list-style: none;
-    gap: 334px;
+    /* gap: 334px; */
 }
 
 .nav-nav_item {
@@ -1054,6 +1107,14 @@ footer.top a {
     height: 1px;
     background-color: #111;
     transform: rotate(30deg);
+}
+
+@media screen and (max-width: 768px) {
+  .work-info-text,
+  .work-mockup,
+  .work-design {
+    width: 90%;
+  }
 }
 
 footer.sub {
