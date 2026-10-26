@@ -171,6 +171,8 @@ h1 {
   h1 {
     font-size: 16px;
     outline: 1px solid red;
+    width: max-content;
+    flex-shrink: 0;
   }
 }
 
