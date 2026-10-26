@@ -355,6 +355,7 @@ body {
     align-items: flex-start;
     padding-top: 100px;
     justify-content: center;
+    width: 100%;
   }
 }
 
