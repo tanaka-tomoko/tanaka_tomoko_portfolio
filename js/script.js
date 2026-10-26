@@ -44,7 +44,6 @@ if (modal) {
 // ローディングアニメーション制御
 const loading = document.querySelector('.loading');
 if (loading){
-    // const lastShown = localStorage.getItem('loadingLastShown');
     // 検証ツール→アプリケーション→ローカルストレージで確認できる
     const lastShown = Number(localStorage.getItem('loadingLastShown'));
     const now = Date.now(); // 現在時刻
