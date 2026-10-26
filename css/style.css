@@ -151,7 +151,9 @@ header {
 
 @media screen and (max-width:768px) {
   header {
-    padding: 61px 40px 16px;
+    /* padding: 61px 40px 16px; */
+    padding: 61px 0px 16px;
+
   }
 }
 
