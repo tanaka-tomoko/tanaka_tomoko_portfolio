@@ -151,7 +151,7 @@ header {
 
 @media screen and (max-width:768px) {
   header {
-    padding: 61px 40px 16px;
+    padding: 40px 40px 16px;
   }
 }
 
@@ -178,7 +178,6 @@ h1 {
     white-space: nowrap;
   }
 }
-
 
 .nav-button {
   position: relative;
@@ -758,6 +757,11 @@ footer.top a {
   left: 24px;
 }
 
+/* 文字位置を調整したい */
+@media screen and (max-width:768px) {
+
+}
+
 .about-me-top h2 {
   font-size: 44px;
   text-align: center;
@@ -796,6 +800,38 @@ footer.top a {
   margin-top: 30px;
 }
 
+@media screen and (max-width:768px) {
+  .about-me-top h2 {
+    font-size: 24px;
+    margin-top: 346px;
+    margin-bottom:  160px;
+  }
+
+  .about-me-top figure {
+    width: 100%;
+  }
+
+  .about-me-top .name {
+  font-size: 32px;
+  letter-spacing: 0.5em;
+  margin-top: 80px;
+}
+
+.about-me-top .name .alpha {
+  position: absolute;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  left: calc(100% + 12px);
+}
+
+.about-me-top .birth {
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+  margin-top: 40px;
+}
+}
+
 .about-me-history {
   margin-top: 150px;
 }
@@ -822,6 +858,31 @@ footer.top a {
   margin-top: 200px;
   width: 400px;
   margin-left: auto;
+}
+
+@media screen and (max-width:768px) {
+  .about-me-history {
+    margin-top: 180px;
+  }
+
+  .about-me-history p {
+  line-height: 3;
+  }
+
+  .about-me-history p + p {
+    margin-top: 40px;
+  }
+
+  .about-me-history .fig1 {
+    margin-top: 300px;
+    width: 200px;
+  }
+
+  .about-me-history .fig2 {
+    margin-top: 300px;
+    width: 200px;
+    margin-left: auto;
+  }
 }
 
 .about-me-feelings {
@@ -859,6 +920,38 @@ footer.top a {
 
 .about-me-image {
   margin: 400px 0 400px;
+}
+
+@media screen and (max-width:768px) {
+  .about-me-feelings {
+    margin-top: 300px;
+  }
+
+  .about-me-feelings .wrap {
+    padding: 0;
+  }
+
+  .about-me-feelings p{
+    line-height: 3;
+    margin-top: 32px;
+  }
+
+  .about-me-feelings p span::after{
+    content: "";
+    width: 28px;
+    height: 1px;
+    display: block;
+    background-color: #0D1317;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 100%;
+  }
+
+  .about-me-image {
+    margin: 300px 0 300px;
+  }
 }
 
 .skills {
@@ -934,31 +1027,42 @@ footer.top a {
 }
 
 @media screen and (max-width: 768px) {
-  .about-me-top h2 {
-    font-size: 24px;
-  }
-  .about-me-feelings .wrap {
-    padding: 0;
-  }
-  .about-me-top figure {
-    width: 100%;
-  }
-  .about-me-image {
-    margin: 300px 0;
-  }
   .skill-list {
     flex-direction: column;
   }
-  .skill-item {
-    width: 100%;
-  }
-  .about-me-history .fig1 {
-    margin-right: auto;
+
+  .skills h3{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 24px;
   }
 
-  .about-me-history .fig1,
-  .about-me-history .fig2 {
-    width: 67%;
+  .tool-detail {
+    font-size: 14px;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 109px;
+  }
+
+  .skill-item {
+    width: 100%;
+    margin-bottom: 108px;
+  }
+
+  .skill-item figure {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 70px;
+  }
+
+  .skill-name {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .skill-text {
+    font-size: 16px;
+    line-height: 2;
   }
 }
 
@@ -969,34 +1073,6 @@ footer.top a {
   padding-top: 214px;
   margin-bottom: 60px;
   text-align: center;
-}
-
-.works-area {
-  max-width: 900px;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.works-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 11.11%;
-  row-gap: 121px;
-}
-
-.work-item {
-  width: 44.445%;
-}
-
-.work-item > a {
-  display: block;
-  text-align: center;
-}
-
-.work-item p {
-  text-align: center;
-  padding-top: 24px;
-  line-height: 1.4;
 }
 
 .select-list {
@@ -1033,10 +1109,50 @@ footer.top a {
 @media screen and (max-width: 768px) {
   .works-all .en {
     font-size: 24px;
+    padding-top: 240px;
+    margin-bottom: 80px;
+  }
+
+  .select-list {
+    gap: 65px;
+    margin-bottom: 158px;
+  }
+
+  .select-list li a {
+  padding-bottom: 8px;
   }
 }
 
-@media screen and (max-width: 600px) {
+.works-area {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 11.11%;
+  row-gap: 121px;
+}
+
+.work-item {
+  width: 44.445%;
+}
+
+.work-item > a {
+  display: block;
+  text-align: center;
+}
+
+.work-item p {
+  text-align: center;
+  padding-top: 24px;
+  line-height: 1.4;
+}
+
+/* works一覧確認 */
+@media screen and (max-width: 7680px) {
   .works-list {
     flex-direction: column;
     gap: 100px;
@@ -1044,6 +1160,10 @@ footer.top a {
   .work-item {
     width: 100%;
   }
+  .work-item p {
+    font-size: 14px;
+    padding-top: 24px;
+}
 }
 
 
@@ -1078,11 +1198,29 @@ footer.top a {
   width: 100%;
 }
 
+/* 右に余白がある */
+@media screen and (max-width: 768px) {
+  .work-detail .en {
+    font-size: 24px;
+    margin: 73px 0 160px;
+  }
+
+  .work-title {
+    margin-bottom: 40px;
+  }
+
+  .work-mockup {
+    width: 295px;
+    margin: 0 auto 74px;
+  }
+}
+
 .work_contents {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .work-info {
   margin: 0 auto 32px;
 }
@@ -1141,6 +1279,43 @@ footer.top a {
     width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .work-info {
+    margin: 0 auto 54px;
+  }
+
+  .work-info_item {
+    margin-bottom: 20px;
+    gap: 74px;
+  }
+
+  .work-info dt,
+  .work-info dd {
+    font-size: 16px;
+  }
+
+  .work-info dt {
+    width: 80px;
+  }
+
+  .work-info_item::after {
+    width: 40px;
+    left: 97px;
+  }
+
+  .work-info-text {
+    width: 295px;
+    margin: 0 auto 130px;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  .work-design {
+    width: 295px;
+    margin: 0 auto;
+}
+}
+
 .lp-images {
   display: flex;
   justify-content: center;
@@ -1176,6 +1351,7 @@ footer.top a {
   transform: translateY(-1px);
 }
 
+/* worksナビゲーション */
 .works-nav {
   max-width: 812px;
   margin: 180px auto 262px;
@@ -1205,7 +1381,7 @@ footer.top a {
   position: relative;
   display: inline-block;
   padding-bottom: 22px;
-  color: #111;
+  color: #0D1317;
   font-size: 12px;
   text-decoration: none;
 }
@@ -1217,7 +1393,7 @@ footer.top a {
   bottom: 0;
   width: 34px;
   height: 1px;
-  background-color: #111;
+  background-color: #0D1317;
 }
 
 .nav-nav_link-prev::after {
@@ -1237,7 +1413,7 @@ footer.top a {
   bottom: 2px;
   width: 7px;
   height: 1px;
-  background-color: #111;
+  background-color: #0D1317;
   transform: rotate(-30deg);
 }
 
@@ -1248,18 +1424,29 @@ footer.top a {
   bottom: 2px;
   width: 7px;
   height: 1px;
-  background-color: #111;
+  background-color: #0D1317;
   transform: rotate(30deg);
 }
 
+/* 前へ・次へ調整する */
 @media screen and (max-width: 768px) {
-  .work-info-text,
-  .work-mockup,
-  .work-design {
-    width: 90%;
-  }
+  .nav-nav_item {
+    width: 50px;
 }
 
+.nav-nav_link {
+  padding-bottom: 18px;
+  font-size: 16px;
+}
+
+.nav-nav_link-prev::after,
+.nav-nav_link-next::after {
+  width: 50px;
+}
+
+}
+
+/* 下層ページ フッター */
 footer.sub {
   margin-top: 300px;
   padding-bottom: 32px;
@@ -1272,6 +1459,21 @@ footer.sub .copy-right {
   color: #0D1317;
 }
 
+/* about meページのフッター調整したい */
+@media screen and (max-width:768px) {
+  footer.sub a {
+    padding-top: 170px;
+    padding-bottom: 24px;
+    font-size: 12px;
+  }
+
+  footer.sub .copy-right {
+    font-size: 12px;
+    padding-bottom: 24px;
+  }
+}
+
+/* about meページ モーダル */
 #modal {
   width: 100vw;
   height: 100vh;
