@@ -125,8 +125,7 @@ br.sp {
   }
 }
 
-
-body:not(.no-padding) {
+body.top {
   padding-top: 164px;
 }
 
@@ -151,7 +150,7 @@ header {
 
 @media screen and (max-width:768px) {
   header {
-    padding: 40px 40px 16px;
+    padding: 60px 24px 16px 40px;
   }
 }
 
@@ -260,6 +259,24 @@ header nav ul li:nth-child(n+2) {
   display: block;
   transform: rotate(90deg);
   transform-origin: bottom right;
+}
+
+@media screen and (max-width:768px) {
+  header nav {
+    width: 110px;
+    margin-left: auto;
+    padding: 120px 0 0 24px;
+  }
+
+  header nav a {
+    font-size: 16px;
+  }
+
+  .site-name {
+    font-size: 14px;
+    bottom: 42px;
+    right: 86px;
+  }
 }
 
 /* グラデーション背景 */
@@ -757,9 +774,10 @@ footer.top a {
   left: 24px;
 }
 
-/* 文字位置を調整したい */
 @media screen and (max-width:768px) {
-
+  .about-me-main{
+    padding-top: 175px;
+  }
 }
 
 .about-me-top h2 {
@@ -1027,8 +1045,13 @@ footer.top a {
 }
 
 @media screen and (max-width: 768px) {
+  .skills {
+    margin-bottom: 278px;
+  }
+
   .skill-list {
     flex-direction: column;
+    margin-bottom: 0px;
   }
 
   .skills h3{
@@ -1047,6 +1070,10 @@ footer.top a {
   .skill-item {
     width: 100%;
     margin-bottom: 108px;
+  }
+
+  .skill-item:last-child {
+    margin-bottom: 0px;
   }
 
   .skill-item figure {
@@ -1102,8 +1129,10 @@ footer.top a {
   transition: 0.3s;
 }
 
-.select-list li a:hover::before{
+@media (hover: hover) {
+  .select-list li a:hover::before{
   transform: scaleX(1);
+  } 
 }
 
 @media screen and (max-width: 768px) {
@@ -1151,19 +1180,19 @@ footer.top a {
   line-height: 1.4;
 }
 
-/* works一覧確認 */
 @media screen and (max-width: 7680px) {
   .works-list {
     flex-direction: column;
     gap: 100px;
   }
+
   .work-item {
     width: 100%;
   }
   .work-item p {
     font-size: 14px;
     padding-top: 24px;
-}
+  }
 }
 
 
@@ -1177,7 +1206,8 @@ footer.top a {
 
 /* Works 各ページ */
 .work-detail .en {
-  margin: 73px 0 60px;
+  padding-top: 214px;
+  margin-bottom: 60px;
   text-align: center;
   font-size: 44px;
 }
@@ -1198,11 +1228,11 @@ footer.top a {
   width: 100%;
 }
 
-/* 右に余白がある */
 @media screen and (max-width: 768px) {
   .work-detail .en {
     font-size: 24px;
-    margin: 73px 0 160px;
+    padding-top: 240px;
+    margin-bottom: 160px;
   }
 
   .work-title {
@@ -1340,6 +1370,21 @@ footer.top a {
   font-size: 14px;
 }
 
+@media screen and (max-width: 600px) {
+.lp-images {
+  display: flex;
+}
+
+.lp-image.pc {
+  display: none;
+}
+
+.lp-image.sp {
+  width: 295px;
+}
+}
+
+
 .design-cafe-link {
   text-align: center;
   margin-bottom: 32px;
@@ -1428,10 +1473,14 @@ footer.top a {
   transform: rotate(30deg);
 }
 
-/* 前へ・次へ調整する */
 @media screen and (max-width: 768px) {
-  .nav-nav_item {
-    width: 50px;
+.works-nav {
+  margin-top: 130px;
+  margin-bottom: 0px;
+}
+
+.nav-nav_item {
+  width: 50px;
 }
 
 .nav-nav_link {
@@ -1442,8 +1491,35 @@ footer.top a {
 .nav-nav_link-prev::after,
 .nav-nav_link-next::after {
   width: 50px;
+  right: auto;
+  left: 0;
+  transform: none;
 }
 
+.nav-nav_link-prev::after{
+  right: 0;
+  left: auto;
+}
+
+.nav-nav_link-prev::before,
+.nav-nav_link-next::before {
+  right: -18px;
+  bottom: 0px;
+  width: 16px;
+  transform: rotate(45deg);
+  transform-origin: right;
+}
+
+.nav-nav_link-prev::before{
+  right: auto;
+  left: -18px;
+  transform: rotate(-45deg);
+  transform-origin: left;
+}
+
+.nav-nav_list {
+  padding: 0 58px;
+}
 }
 
 /* 下層ページ フッター */
@@ -1459,12 +1535,10 @@ footer.sub .copy-right {
   color: #0D1317;
 }
 
-/* about meページのフッター調整したい */
 @media screen and (max-width:768px) {
-  footer.sub a {
-    padding-top: 170px;
-    padding-bottom: 24px;
-    font-size: 12px;
+  footer.sub {
+    margin-top: 118px;
+    padding-bottom: 0px;
   }
 
   footer.sub .copy-right {
