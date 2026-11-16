@@ -148,6 +148,18 @@ header {
   z-index: 1000;
 }
 
+header.white .en a {
+  color: white;
+}
+
+header.white .nav-button span {
+  background-color: white;
+}
+
+header.white.nav-open .nav-button span {
+  background-color: #0d1317;
+}
+
 @media screen and (max-width:768px) {
   header {
     padding: 60px 24px 16px 40px;
@@ -1594,4 +1606,24 @@ footer.sub .copy-right {
   width: 350px;
   line-height: 2;
   font-size: 14px;
+}
+
+@media screen and (max-width:768px) {
+  .modal-content {
+    width: 100vw;
+    height: auto;
+    min-height: 282px;
+    box-sizing: border-box;
+    padding-inline: 62px;
+  }
+
+  .modal-content-inner p {
+      width: auto;
+  }
+
+  .modal-content-inner figure {
+    width: 50px;
+    margin-bottom: 24px;
+  }
+
 }

@@ -58,3 +58,28 @@ if (loading){
         localStorage.setItem('loadingLastShown', now);
     }
 }
+
+const aboutMeMain = document.querySelector('.about-me-main');
+if (aboutMeMain){
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // 画面内に入ったとき
+                // console.log('画面内');
+                header.classList.add('white')
+
+            } else {
+                // 画面外に出たとき
+                // console.log('画面外');
+                header.classList.remove('white')
+            }
+        });
+    }, {
+        threshold: 0,
+        rootMargin: isMobile ? '-80px' : '-50px'
+    });
+
+    observer.observe(aboutMeMain);
+}
+
